@@ -10,3 +10,5 @@ phoneBtn.addEventListener("click", () => {
     console.log("Contact through phone number")
     location.href = "tel: +962790699156";
 });
+
+
