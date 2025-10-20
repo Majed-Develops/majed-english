@@ -1,10 +1,17 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
     background-color: rgb(177, 109, 31);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    width: 100%;
     overflow-x: hidden;
 }
+
+
 
 header{
     background-color: burlywood;
@@ -16,6 +23,7 @@ header{
     border: 2px solid black;
     border-radius: 10px;
     margin-bottom: 20px;
+    
 }
 
 @keyframes headerAnimation{
@@ -75,30 +83,25 @@ h1{
 }
 
 
-.topic{
+.topic {
     background-color: coral;
     border: 2px solid black;
     border-radius: 10px;
     margin: 20px auto;
-    padding: 5px;
     font-weight: bold;
     width: 85%;
     position: relative;
-    right: auto;
-    transition: all 0.5s ease-out;
+    transition: all 0.4s ease-out;
     cursor: pointer;
     box-shadow: 5px 5px 5px black;
+    overflow: hidden;
 }
 
-.topic p {
-  line-height: 1.7;
-}
+
 
 .topic:hover{
     transform: scale(1.10);
-    color: black;
     background-color: brown;
-    border: 2px solid white;
 }
 
 
@@ -107,4 +110,35 @@ h1{
         color: white;
     }
     cursor: pointer;
+}
+
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+  color: white;
+  padding: 0 10px;
+  border-radius: inherit;
+}
+
+
+.arrow { float: left; transition: transform 0.3s ease; }
+
+.QA.open .answer {
+  max-height: 200px;
+  opacity: 1;
+  padding: 10px;
+  color: black;
+}
+
+
+.topic:hover{
+    .answer{
+        color: white;
+    }
+    .QA.open .answer:hover{
+    color: white;
+}
 }
