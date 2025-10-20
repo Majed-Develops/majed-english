@@ -9,6 +9,7 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     overflow-x: hidden;
+    padding-bottom: 10px;
 }
 
 
@@ -96,6 +97,7 @@ h1{
     box-shadow: 5px 5px 5px black;
     overflow: hidden;
     padding: 5px;
+    line-height: 20px;
 }
 
 
@@ -112,6 +114,7 @@ h1{
     }
     cursor: pointer;
 }
+
 
 
 .answer {
