@@ -76,6 +76,8 @@ h1{
     border: 1px solid black;
     transition: all 0.3s ease;
     cursor: pointer;
+    width:25px;
+    height: 25px;
 }
 
 .button:hover{
