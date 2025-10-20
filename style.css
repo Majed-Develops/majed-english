@@ -22,10 +22,11 @@ header{
     animation-name: headerAnimation;
     animation-duration: 15s;
     border: 2px solid black;
-    border-radius: 10px;
     margin-bottom: 20px;
     
 }
+
+
 
 @keyframes headerAnimation{
   0%   {background-color:burlywood; color: black;}
@@ -145,4 +146,17 @@ h1{
     .QA.open .answer:hover{
     color: white;
 }
+}
+
+.warning{
+    animation-name: warningAnimate;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    transition: transform 0.3s linear;
+}
+
+@keyframes warningAnimate{
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
 }
