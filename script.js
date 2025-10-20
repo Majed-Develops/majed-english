@@ -15,8 +15,14 @@ document.querySelectorAll('.QA').forEach(qa => {
   const answer = qa.querySelector('.answer');
 
   qa.addEventListener('click', () => {
-    qa.classList.toggle('open');
+    document.querySelectorAll('.QA').forEach(otherQA => {
+      if (otherQA !== qa) {
+        otherQA.classList.remove('open');
+        otherQA.querySelector('.answer').style.maxHeight = null;
+      }
+    });
 
+    qa.classList.toggle('open');
     if (qa.classList.contains('open')) {
       answer.style.maxHeight = answer.scrollHeight + 'px';
     } else {
