@@ -6,7 +6,7 @@ body{
     overflow-x: hidden;
 }
 
-.header{
+header{
     background-color: burlywood;
     width: 100%;
     color: black;
@@ -15,6 +15,7 @@ body{
     animation-duration: 5s;
     border: 2px solid black;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 @keyframes headerAnimation{
@@ -47,12 +48,13 @@ h1{
     align-items: center;
     justify-content: space-evenly;
     background-color: lightsalmon;
-    margin: 20px;
     position: sticky;
     top: 0;
+    z-index: 10;
     padding: 10px;
     border-radius: 10px;
     border: 2px solid black;
+    margin-bottom: 20px;
 }
 
 .button{
