@@ -39,18 +39,7 @@ header{
 h1{
     text-align: center;
     font-size: 26px;
-    /* position: relative; */
-    /* animation-name: headerMovement;
-    animation-duration: 5s;
-    animation-iteration-count: infinite; */
-    /* white-space: normal; */
 }
-/* 
-@keyframes headerMovement{
-    0% {left: 0%;}
-    50% {left: 40%;}
-    100% {left: 0%;}
-} */
 
 
 .contact{
@@ -131,6 +120,8 @@ h1{
 }
 
 
+
+
 .arrow { float: left; transition: transform 0.3s ease; }
 
 .QA.open .answer {
@@ -145,6 +136,9 @@ h1{
     .answer{
         color: white;
     }
+    .alert{
+        color: darksalmon;
+    }
     .QA.open .answer:hover{
     color: white;
 }
@@ -155,6 +149,8 @@ h1{
     animation-iteration-count: infinite;
     animation-duration: 3s;
     transition: transform 0.3s linear;
+    padding: 10px;
+    background-color: darkred;
 }
 
 @keyframes warningAnimate{
