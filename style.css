@@ -1,0 +1,103 @@
+body{
+    background-color: rgb(177, 109, 31);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    max-width: 100%;
+    text-align: right;
+}
+
+.header{
+    background-color: burlywood;
+    width: 100%;
+    padding: 5px;
+    color: black;
+    animation-iteration-count: infinite;
+    animation-name: headerAnimation;
+    animation-duration: 5s;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+@keyframes headerAnimation{
+  0%   {background-color:burlywood; color: black;}
+  25%  {background-color: rgb(185, 150, 103); color: black;}
+  50%  {background-color:rgb(146, 111, 66); color: black;}
+  75%  {background-color:rgb(100, 71, 33); color: black;}
+  100% {background-color:burlywood; color: black;}
+}
+
+h1{
+    text-align: left;
+    width: fit-content;
+    font-size: 26px;
+    padding: 5px; 
+    position: relative;
+    animation-name: headerMovement;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes headerMovement{
+    0% {left: 0%;}
+    10% {left: 20%;}
+    20% {left: 40%;}
+    30% {left: 60%;}
+    40% {left: 80%;}
+    50% {left: 85%;}
+    60% {left: 80%;}
+    70% {left: 60%;}
+    80% {left: 40%;}
+    90% {left: 20%;}
+    100% {left: 0%;}
+}
+
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: lightsalmon;
+    margin: 20px;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+button{
+    background-color: brown;
+    padding: 10px;
+    font-weight: bold;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background-color: coral;
+    color: white;
+}
+
+
+.topic{
+    background-color: coral;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 5px;
+    font-weight: bold;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    transition: all 0.5s ease;
+}
+
+
+.topic:hover{
+    transform: scale(1.15);
+    color: black;
+    background-color: brown;
+    border: 2px solid white;
+}
