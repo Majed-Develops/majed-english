@@ -3,10 +3,13 @@ const phoneBtn = document.getElementById("phonenumberButton");
 
 gmailBtn.addEventListener("click", () => {
     console.log("Contact through Gmail");
-    window.open = "mailto: majedbashir.dev@gmail.com";
+    location.href = "mailto: majedbashir.dev@gmail.com";
 });
 
 phoneBtn.addEventListener("click", () => {
     console.log("Contact through phone number")
-    window.open = "tel: +962790699156";
-})
+    location.href = "tel: +962790699156";
+});
+
+
+document.getElementById("width").innerHTML = `Host name: ${window.location.hostname}`;

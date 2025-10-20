@@ -2,14 +2,14 @@ body{
     background-color: rgb(177, 109, 31);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    max-width: 100%;
+    width: 100%;
     text-align: right;
+    overflow-x: hidden;
 }
 
 .header{
     background-color: burlywood;
     width: 100%;
-    padding: 5px;
     color: black;
     animation-iteration-count: infinite;
     animation-name: headerAnimation;
@@ -27,29 +27,20 @@ body{
 }
 
 h1{
-    text-align: left;
-    width: fit-content;
+    text-align: center;
     font-size: 26px;
-    padding: 5px; 
-    position: relative;
-    animation-name: headerMovement;
+    /* position: relative; */
+    /* animation-name: headerMovement;
     animation-duration: 5s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
+    /* white-space: normal; */
 }
-
+/* 
 @keyframes headerMovement{
     0% {left: 0%;}
-    10% {left: 20%;}
-    20% {left: 40%;}
-    30% {left: 60%;}
-    40% {left: 80%;}
-    50% {left: 85%;}
-    60% {left: 80%;}
-    70% {left: 60%;}
-    80% {left: 40%;}
-    90% {left: 20%;}
+    50% {left: 40%;}
     100% {left: 0%;}
-}
+} */
 
 
 .contact{
@@ -65,7 +56,7 @@ h1{
     border: 2px solid black;
 }
 
-button{
+.button{
     background-color: brown;
     padding: 10px;
     font-weight: bold;
@@ -73,9 +64,10 @@ button{
     border-radius: 10px;
     border: 1px solid black;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-button:hover{
+.button:hover{
     background-color: coral;
     color: white;
 }
@@ -96,8 +88,16 @@ button:hover{
 
 
 .topic:hover{
-    transform: scale(1.15);
+    transform: scale(1.10);
     color: black;
     background-color: brown;
     border: 2px solid white;
+}
+
+
+.QA:hover{
+    .question{
+        color: white;
+    }
+    cursor: pointer;
 }
